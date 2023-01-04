@@ -1,0 +1,594 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.menubtn {
+    padding-top: 75px;
+    position: absolute;
+    display: none;
+}
+
+.menubtn button {
+    height: 30px;
+    width: 23vw;
+    border-radius: 10px;
+    border: none;
+    background: orange;
+}
+
+.absolutemenu {
+    display: none;
+    background: #fe9000;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+
+.absolutecenter {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    padding-left: 12.5%;
+    padding-top: 40px;
+}
+
+.absolutecenter button {
+    height: 40px;
+    width: 90px;
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+}
+
+.menuitems {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.menuitems a {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 10px;
+    border-bottom: solid #232329 4px;
+}
+
+.header {
+    width: 100%;
+    background: url(../imgs/back1.png) 0px no-repeat;
+    background-size: cover;
+}
+
+.top {
+    display: flex;
+}
+
+.leftpart {
+    margin-left: 6%;
+}
+
+.leftpart a,
+.rightpart a {
+    margin-right: 3.6vw;
+    font-size: 1.2vw;
+    font-weight: 800;
+    font-family: monospace;
+    color: white;
+    cursor: pointer;
+}
+
+.leftpart a.active {
+    color: orange;
+}
+
+.leftpart a:last-child {
+    margin-right: 0px;
+}
+
+.leftpart,
+.rightpart {
+    padding-top: 75px;
+}
+
+.middlepart {
+    width: 100px;
+    height: 80px;
+    margin-left: 16%;
+    margin-right: 16%;
+    margin-top: 38px;
+}
+
+.middlepart img {
+    width: 100px;
+    height: 80px;
+}
+
+.bottom {
+    display: flex;
+}
+
+/* .leftbottom img {
+    width: 530px;
+    height: 490px;
+} 
+*/
+
+.leftbottom {
+    margin-top: 10.3vw;
+    margin-bottom: 10.3vw;
+    margin-left: 3.3%;
+}
+
+.rightbottom {
+    width: 36%;
+    margin-left: 4.2%;
+    margin-top: 220px;
+}
+
+.rightbottom h1 {
+    font-size: 4vw;
+    font-family: monospace;
+    font-weight: 700;
+    line-height: 4vw;
+    color: orange;
+}
+
+.rightbottom p {
+    font-size: 2.04vw;
+    color: white;
+    font-family: monospace;
+    padding-bottom: 2.3vw;
+}
+
+.rightbottom a {
+    padding-top: 1.65vw;
+    padding-bottom: 1.65vw;
+    padding-left: 1.65vw;
+    padding-right: 1.65vw;
+    background-color: orange;
+    font-family: monospace;
+    font-size: 1.65vw;
+    font-weight: 800;
+    border: none;
+    border-radius: 10px;
+}
+
+.block2 {
+    background: url(../imgs/backtwo.png) no-repeat;
+    background-size: cover;
+}
+
+.orangequad {
+    padding-top: 8.35%;
+    padding-left: 8.3%;
+    width: 45%;
+}
+
+.orangequad img {
+    width: 100%;
+}
+
+.block2top {
+    display: flex;
+}
+
+.b2toptext {
+    width: 37%;
+    padding-top: 15.5%;
+    padding-left: 3.5%;
+}
+
+.b2toptext h1,
+.block2bottom h1 {
+    color: white;
+    font-family: monospace;
+    font-size: 4vw;
+    line-height: 8vw;
+}
+
+.b2toptext p,
+.block2bottom p {
+    color: white;
+    font-family: monospace;
+    font-size: 2.2vw;
+    font-weight: 800;
+}
+
+.block2bottom {
+    padding-top: 30vw;
+    padding-left: 14%;
+    width: 40%;
+    padding-bottom: 73.35%;
+}
+
+.block3 {
+    width: 100%;
+    background: #17171e;
+}
+
+.block3 h1 {
+    margin: 0;
+    text-align: center;
+    padding-top: 10.7vw;
+    color: white;
+    font-family: monospace;
+    font-size: 3vw;
+}
+
+.ourfoodgallery {
+    width: 90%;
+    margin: auto;
+    padding-top: 6.8vw;
+    padding-bottom: 10.7vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.ourfoodtop,
+.ourfoodbottom {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+.ourfoodbottom {
+    padding-top: 33px;
+}
+
+.ourfoodtopimgbox {
+    width: 405px;
+    height: 485px;
+}
+
+.ourfoodtop img,
+.ourfoodbottom img {
+    height: 100%;
+    width: 100%;
+}
+
+.block4 {
+    width: 100%;
+    background: url("../imgs/enjoyourfood.png");
+    background-size: cover;
+}
+
+
+@media (max-width: 940px) {
+    .bottom {
+        display: block;
+    }
+
+    .rightbottom {
+        margin: auto;
+        margin-top: 10.3vw;
+        padding-bottom: 10.3vw;
+    }
+
+    .leftbottom img {
+        width: 90%;
+        margin-bottom: 0px;
+    }
+
+    .rightbottom {
+        width: 49%;
+    }
+}
+
+.enjoyourfood {
+    width: 49%;
+    border: solid orange 0.7vw;
+    background: #202027de;
+}
+
+.subblock4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 13.05vw;
+    padding-bottom: 13.05vw;
+}
+
+.block4pt {
+    font-size: 5vw;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    padding-top: 5vw;
+}
+
+.underbigtext {
+    width: 90%;
+    margin: auto;
+}
+
+.underbigtext p {
+    text-align: center;
+    font-size: 3vw;
+    font-weight: 500;
+    color: white;
+    padding-top: 2vw;
+    padding-bottom: 5vw;
+}
+
+.block5 {
+    background: #17171e;
+}
+
+.ourmenu {
+    font-size: 4vw;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    padding-top: 20vw;
+    padding-bottom: 8.8vw;
+}
+
+.card {
+    width: 400px;
+}
+
+.cardimg {
+    width: 400px;
+    height: 360px;
+}
+
+.cardimg img {
+    width: 100%;
+}
+
+.cardheader p {
+    font-size: 1.7vw;
+    font-weight: bold;
+    color: #e58f00;
+    padding-top: 1.8vw;
+    text-transform: uppercase;
+}
+
+.carddescription,
+.cardprice {
+    width: 100%;
+}
+
+.carddescription p {
+    font-size: 1.3vw;
+    font-weight: 500;
+    color: white;
+    padding-top: 1.3vw;
+}
+
+.cardprice p {
+    font-size: 1.6vw;
+    font-weight: bold;
+    color: #e58f00;
+    padding-top: 1.3vw;
+}
+
+.cards {
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    padding-bottom: 20vw;
+}
+
+@media (max-width: 1400px) {
+    .cards {
+        display: block;
+    }
+
+    .card {
+        margin: auto;
+        margin-top: 10px;
+        width: 25%;
+    }
+
+    .cardimg {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.block6 {
+    background-color: #e58f00;
+    display: flex;
+    transition: .7s ease;
+}
+
+.block6img img {
+    margin-top: -10%;
+    transition: .7s ease;
+}
+
+.block6text {
+    margin-left: 5%;
+    width: 37%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.topp {
+    font-size: 3.34vw;
+    font-weight: bold;
+    color: white;
+    transition: .7s ease;
+}
+
+.bottomp {
+    font-size: 1.75vw;
+    font-weight: 800;
+    color: white;
+    padding-top: 1.75vw;
+    transition: .7s ease;
+}
+
+.block7 {
+    height: 440px;
+    background-color: #35353b;
+}
+
+.foodlover {
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.bottomnav {
+    display: flex;
+    padding-top: 60px;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+.bottomnav a {
+    font-size: 1.7vw;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 1.85vw;
+    padding-top: 50px;
+}
+
+.social img {
+    width: 100%;
+}
+
+@media (max-width: 1100px) {
+
+    .ourfoodtop,
+    .ourfoodbottom {
+        display: block;
+    }
+
+    .ourfoodtopimgbox {
+        margin: auto;
+        margin-bottom: 3.8vw;
+        width: 40%;
+        height: auto;
+    }
+
+    .ourfoodbottom {
+        padding-top: 0px;
+    }
+}
+
+@media (max-width: 1170px) {
+    .underbigtext p {
+        font-size: 3vw;
+    }
+}
+
+/* @media (max-width: 1118px) {
+    .underbigtext p {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .underbigtext p {
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 875px) {
+    .underbigtext p {
+        font-size: 26px;
+    }
+} */
+
+@media (max-width: 785px) {
+    .block2top {
+        /* flex-direction: column; */
+        align-items: center;
+        transition: .8s ease;
+    }
+
+    .b2toptext {
+        padding-top: 0;
+    }
+
+    /* .orangequad {
+        padding-left: 0;
+    } */
+}
+
+@media (max-width: 1065px) {
+    .block6 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: .7s ease;
+    }
+
+    .block6text {
+        padding-bottom: 5vw;
+        padding-top: 5vw;
+    }
+}
+
+@media (max-width: 700px) {
+    .block6img img {
+        width: 500px;
+        transition: .7s ease;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .leftpart,
+    .rightpart {
+        display: none;
+    }
+
+    .top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menubtn {
+        display: block;
+    }
+}
+
+@media (max-width: 425px) {
+    .block6img img {
+        width: 300px;
+        transition: .7s ease;
+    }
+
+    /* .card,
+    .cardimg {
+        width: 85%;
+        height: auto;
+        transition: .7s ease;
+    } */
+}
+
+@media (max-width: 405px) {
+    .foodlover img {
+        width: 300px;
+        transition: .7s ease;
+    }
+
+    .foodlover img {
+        width: 90%;
+    }
+}
+
+
+
+@media (max-width: 580px) {
+    .block6img img {
+        width: 90%;
+        transition: .7s ease;
+    }
+}
